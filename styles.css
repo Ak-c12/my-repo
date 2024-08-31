@@ -1,0 +1,196 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height:100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+header {
+    background-color: #0f1111;
+    color: white;
+    padding: 0 4%;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo{
+    /* margin: 5px;
+    padding: 5px; */
+    font-size: 28px;
+}
+.logo span{
+    color: #007bff;
+}
+.nav_bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+.nav_bar ul li {
+    /* margin: 0 15px; */
+    padding: 10px 20px;
+    font-size: 17px;
+    position: relative;
+}
+
+.nav_bar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+.nav_bar ul li a:hover{
+    color: #007bff;
+}
+.ticket_button:hover{
+    color: #0a4f51;
+}
+.dropdown_menu{
+    display: none;
+}
+
+.nav_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #0f1111;
+}
+.dropdown_menu ul{
+    display: block;
+    margin: 5px;
+
+}
+.nav_bar ul li:hover .dropdown_menu ul li{
+    width: 120px;
+}
+.hero {
+    height: calc(100vh -80px );
+    background-image: url('hero-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+} */
+
+.ticket_button {
+    background-color: #008573;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    /* display: inline-block; */
+    text-align: center;
+}
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-window {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbot-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 40px;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0.3s ease;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+footer {
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    position: relative;
+    
+    padding:0px;
+    min-height:0px;
+}
+
+.footer-content{
+    height: 20px;
+    background-color: #0f1111;
+    color: white;
+    /* display: flex;
+    justify-content: center; */
+}

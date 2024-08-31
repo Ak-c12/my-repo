@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="golden-luxury-house-with-pillar-for-bank-court-law-or-museum-logo-design-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>ITIHAS Museum Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+    <header>
+        <div class="logo">I T I <span>H A S.</span></div>
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#museums">Museums <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#redfort">Red Fort</a></li>
+                            <li><a href="#Science">Science Museum</a></li>
+                            <li><a href="#Doll">Doll Museum</a></li>
+                            <li><a href="#IAF">Airforce Museum</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#visit">Visitor</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#tickets" class="ticket_button">Tickets</a></li>    
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to <span>I T I H A S</span></h1>
+                
+                <!-- <a href="#ticketing" class="button">Buy Tickets</a> -->
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="red-fort-ILFbyAP-1L.jpg" alt="Red fort">
+                    <div class="card_content">
+                        <h3>Red Fort</h3>
+                        <p>The Red Fort, also known as Lal Qila, is a historic fort located in Delhi, India. Built by the Mughal Emperor Shah Jahan in the mid-17th century (1638-1648), it served as the main residence of the Mughal emperors for around 200 years. The fort is named for its massive enclosing walls of red sandstone and is a UNESCO World Heritage Site.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Doll Museum Delhi Pixelated Memories Sahil Ahuja (3).jpg" alt="Doll">
+                    <div class="card_content">
+                        <h3>Doll Museum</h3>
+                        <p>The Shankar's International Dolls Museum in Delhi houses a vast collection of over 6,500 dolls from around 85 countries. Established by K. Shankar Pillai in 1965, the museum showcases cultural diversity and craftsmanship through its exquisite, traditional, and contemporary dolls.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="indian-air-force-museum.jpg" alt="">
+                    <div class="card_content">
+                        <h3>Airforce Museum</h3>
+                        <p>The Indian Air Force Museum in Delhi showcases the history and achievements of the Indian Air Force. It features a collection of vintage aircraft, weapons, uniforms, and memorabilia, highlighting India's aviation journey from World War II to modern-day aerial defense advancements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot">
+        <button class="chatbot-button" onclick="openChatbot()">Chat with Us</button>
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">I T I H A S</div>
+            <div class="chatbot-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type ur mess">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p> Copyright &copy; I T I H A S. 2024 All rights reserved.</p>
+            <!-- <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div> -->
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
